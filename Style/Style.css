@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: default;
+    user-select: none;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+}
+.background{
+    background-image: url(../Assets/background-image.jpg);
+}
+main.index{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+    z-index: -1;
+}
+main.index div{
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 150px;
+    padding: 50px;
+    border-radius: 50% 100px 50% 100px;
+    width: 400px;
+    background-color: rgba(189, 124, 232, 0.638);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+main.login{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+    z-index: -1;
+}
+main.login form{
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 150px;
+    padding: 50px;
+    border-radius: 30% 100px 40% 100px;
+    width: 400px;
+    background-color: rgba(189, 124, 232, 0.6);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+main.login form label{
+    display: block;
+    margin-bottom: 10px;
+}
+main.login form input{
+    font-size: larger;
+    background-color: transparent;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+main.login form button{
+    font-size: larger;
+    background-color: rgb(255, 229, 162);
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border: solid black 0.5px;
+}
+
+main.login form button:hover{
+    background-color: rgb(243, 206, 114);
+}
+
+main.login form input:focus{
+    outline: none;
+}
+
+.error{
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+}

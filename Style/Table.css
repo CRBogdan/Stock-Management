@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: default;
+    user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(55, 55, 55, 0.8);
+    border-radius: 0 20px 20px 0;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(40, 40, 40, 0.8);
+  }
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+}
+
+main.table{
+    padding-top: 70px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+main.table .container{
+    overflow-y: scroll;
+    height: 80%;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    border: solid black 0.5px;
+}
+
+main.table .container form{
+    margin: 20px 0;
+    display: flex;
+}
+
+main.table .container form div{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+main.table .container form div label{
+    white-space: nowrap;
+    font-size: larger;
+    margin-right: 5px;
+}
+
+main.table .container form div select{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: solid black 0.5px;
+    font-size: large;
+}
+
+main.table .container h1{
+    margin-bottom: 20px;
+}
+
+main.table .container th{
+    font-size: larger;
+    min-width: 250px;
+    height: 50px;
+}
+
+main.table .container table{
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+main.table .container th{
+    border-bottom: 1px solid black;
+}
+
+main.table .container th, main.table .container td{
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+main.table .container th:last-child, main.table .container td:last-child{
+    border-right: none;
+}
+
+main.table .container tr td{
+    font-size: large;
+    height: 50px;
+}
+
+main.table .container tr:hover td{
+    background-color: rgba(137, 137, 137, 0.6);
+}
+
+main.table .container .id{
+    display: none;
+}
+
+main.table .container .no{
+    width: 150px;
+}
+
+main.table .container .button{
+    font-size: large;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+main.table .container .edit{
+    background-color: rgb(32, 82, 181);
+}
+main.table .container .edit:hover{
+    background-color: rgb(18, 45, 97);
+}
+
+main.table .container .add{
+    background-color: rgb(22, 144, 56);
+}
+main.table .container .add:hover{
+    background-color: rgb(14, 93, 36);
+}
+
+main.table .container .delete{
+    background-color: rgb(164, 56, 56);
+}
+
+main.table .container .delete:hover{
+    background-color: rgb(74, 24, 24);
+    transform: scale(1.05);
+}
+
+.error{
+    color: red;
+    font-size: smaller;
+    margin-bottom: 10px;
+    display: block;
+}

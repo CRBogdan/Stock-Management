@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: default;
+    user-select: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px black;
+    z-index: 1000;
+}
+nav img{
+    height: 50px;
+    margin-left: 50px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    height: 60px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a, nav ul li span{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav ul li:hover{
+    background-color: rgba(189, 124, 232, 0.6);
+}
+
+.logoutButton{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav .stocSubmenu ul{
+    position: absolute;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+nav .stocSubmenu ul li{
+    height: 30px;
+    width: 200px;
+}
+nav .stocSubmenu ul li a{
+    padding: 0 10px;
+}
+nav .stocSubmenu:hover ul{
+    transform: scaleY(1);
+}
+

@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: default;
+    user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(55, 55, 55, 0.8);
+    border-radius: 0 20px 20px 0;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(40, 40, 40, 0.8);
+  }
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+}
+
+main.edit{
+    padding-top: 70px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+main.edit .container{
+    height: 80%;
+    width: 80%;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    border: solid black 0.5px;
+}
+
+main.edit .container h1{
+    margin-bottom: 20px;
+}
+
+main.edit .container th{
+    font-size: larger;
+    width: 250px;
+    height: 50px;
+}
+
+main.edit .container table{
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+main.edit .container th{
+    border-bottom: 1px solid black;
+}
+
+main.edit .container th, main.table .container td{
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+main.edit .container th:last-child, main.table .container td:last-child{
+    border-right: none;
+}
+
+main.edit .container tr td{
+    font-size: large;
+    height: 50px;
+}
+
+main.edit .container tr:hover td{
+    background-color: rgba(137, 137, 137, 0.6);
+}
+
+main.edit .container .id{
+    display: none;
+}
+
+main.edit .container .no{
+    width: 150px;
+}
+
+main.edit .container .submitWraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.edit .container .button{
+    font-size: large;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+main.edit .container .submit{
+    background-color: rgb(32, 82, 181);
+}
+main.edit .container .submit:hover{
+    background-color: rgb(18, 45, 97);
+}
+
+main.edit .container .edit{
+    background-color: rgb(32, 82, 181);
+}
+main.edit .container .edit:hover{
+    background-color: rgb(18, 45, 97);
+}
+
+main.edit .container form{
+    height: 100%;
+}
+
+main.edit .container form.heightAuto {
+    height: auto;
+    width: 500px;
+    display: inline-block;
+}
+
+main.edit .container .formGroup{
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main.edit .container form.heightAuto .formGroup{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main.edit .container form .formWraper{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-count: auto;
+    flex-wrap: wrap;
+}
+
+main.edit .container label{
+    display: block;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+main.edit .container input, main.edit .container select, main.edit .container textarea{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: solid black 0.5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+main.edit .container textarea{
+    height: 200px;
+    resize: none;
+}
+
+.error{
+    color: red;
+    font-size: smaller;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.block{
+    display: block;
+}

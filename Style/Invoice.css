@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+.content{
+    background-color: white;
+    width: 595px;
+    height: 842px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+table{
+    border-spacing: 10px 10px;
+    width: 100%;
+}
+.head th{
+    text-align: left;
+    width: 50%;
+}
+.head td{
+    width: 25%;
+}
